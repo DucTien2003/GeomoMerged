@@ -1,0 +1,72 @@
+@import './variables';
+
+// Button
+button.ant-btn.ant-btn-primary {
+  &[type='button'],
+  &[type='submit'] {
+    color: #fff;
+    background-color: $color-primary-2;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.ant-btn-background-ghost {
+      background-color: transparent;
+    }
+  }
+}
+
+// Form
+.ant-form {
+  & * {
+    font-size: 16px !important;
+  }
+
+  .ant-form-item-explain-error {
+    margin-bottom: 10px;
+  }
+}
+
+// Modal
+.ant-modal-header {
+  margin: 0;
+  border-bottom: 1px solid #cecdcd;
+
+  .ant-modal-title {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+}
+
+.ant-modal-content {
+  .ant-modal-close {
+    margin-top: 5px;
+  }
+
+  .ant-modal-close-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+    &:hover {
+      color: rgb(245, 102, 102);
+    }
+  }
+}
+
+// Checkbox
+.ant-checkbox-wrapper {
+  .ant-checkbox-inner {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+
+    &::after {
+      top: 48%;
+      left: 30%;
+      transform: rotate(45deg) scale(1) translate(-50%, -50%);
+    }
+  }
+}
